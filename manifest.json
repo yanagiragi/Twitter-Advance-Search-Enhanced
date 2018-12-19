@@ -1,0 +1,19 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twitter Advance Search Enhanced",
+  "version": "1.0",
+  "description": "",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/search?*"],
+      "js": [
+          "assets/jquery-3.3.1.min.js",
+          "main.js"
+        ]
+    }
+  ]
+}
